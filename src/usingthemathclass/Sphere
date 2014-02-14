@@ -1,0 +1,26 @@
+package shapes;
+import java.lang.Math;
+
+//author Pietro G
+
+    public class Sphere 
+{
+    double radius;
+    double pi = Math.PI;
+    
+    public Sphere(double r)
+    {
+        radius = r;
+    }
+    
+    public void calcVol()
+    {
+        double cv = 4/3 * pi * Math.pow(radius,3);
+        System.out.println("The volume of the sphere is " + cv);
+    }
+    
+    public void calcSurfaceArea()
+    {
+        double csa = 4 * pi * Math.pow(radius,2);
+        System.out.println("The surface area of the sphere is " + csa);
+    }
