@@ -1,0 +1,29 @@
+package usingthemathclass; 
+
+//author Lazaro K
+    public class Cone 
+{
+    double radius;
+    double height;
+    double slant;
+    double pi = Math.PI;
+    
+    public Cone(double r, double h, double s)
+    {
+        radius = r;
+        height = h;
+        slant = s;
+    }
+    
+    public void calcSarea()
+    {
+        double SA = (pi * radius * slant) + (pi * Math.pow(radius,2));
+        System.out.println("The surface area of the cone is " + SA);
+    }
+    
+    public void calcVol()
+    {
+        double Vol = 1/3 * pi * Math.pow(radius,2) * height;
+        System.out.println("The volume of the cone is " + Vol);
+    }
+}
